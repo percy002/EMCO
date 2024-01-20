@@ -14,6 +14,11 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      colors:{
+        primary: '#f26f1f',        
+        grey: 'rgba(36,36,36, .1)',
+        bgContraste: '#35240c'
       }
     },
     container: {
@@ -26,7 +31,8 @@ const config: Config = {
         xl: '1240px',
         '2xl': '1496px',
       },
-    }
+    },
+    
   },
   plugins: [flowbite],
 }
