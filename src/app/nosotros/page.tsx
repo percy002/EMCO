@@ -5,9 +5,20 @@ import Image from "next/image";
 import React from "react";
 
 export default function page() {
+  const carouselData = [
+    {
+      imageURL: '/images/banner/bannerInicio1.jpg',
+      title: 'La seguridad es uno de nuestros valores y una prioridad para nuestra empresa',
+    },
+    {
+      imageURL: '/images/banner/bannerInicio2.jpg',
+      title: 'Asumimos la salud y la seguridad industrial en todas nuestras acciones',
+    },
+    // ... más elementos
+  ];
   return (
     <div className="">
-      <HeroCarouselAbout />
+      <HeroCarouselAbout carouselElements={carouselData}/>
       <section className="container mt-14">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight my-4 flex items-end">
           <span className="text-primary">Historia</span>

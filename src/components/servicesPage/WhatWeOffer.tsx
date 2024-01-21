@@ -11,7 +11,7 @@ interface Props {
   subservicios: Subservicio[];
 }
 export default function WhatWeOffer({ title, descripcion, subservicios }: Props) {
-  const imagenServicio = `"bg-[url('/images/servicios/mecanizado.jpg')]`;
+  const imagenServicio = `/images/servicios/mecanizado.jpg`;
   return (
     <div className="mt-8">
       <section className="px-4">
@@ -41,8 +41,9 @@ export default function WhatWeOffer({ title, descripcion, subservicios }: Props)
             </article>
           </div>
           <div
-            className={`md:w-1/2 flex h-[40vh] md:h-auto relative rounded-3xl justify-start items-end bg-cover bg-center bg-no-repeat ${imagenServicio}`}
-          >
+            className={`md:w-1/2 flex h-[40vh] md:h-auto relative rounded-3xl justify-start items-end bg-cover bg-center bg-no-repeat`}          
+            style={{backgroundImage:`url(${imagenServicio})`}}
+            >
             <div className="absolute inset-0 bg-black bg-opacity-20 rounded-3xl"></div>
             <div className="p-8 text-2xl text-white relative z-10">
               <ul className="space-y-4">

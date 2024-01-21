@@ -56,7 +56,7 @@ export default function NavbarFB() {
   };
 
   useEffect(() => {
-    console.log(!esPaginaContacto, "/", pathname);
+    // console.log(!esPaginaContacto, "/", pathname);
 
     if (typeof window !== "undefined" && !esPaginaContacto) {
       window.addEventListener("scroll", listenScrollEvent);
@@ -79,13 +79,35 @@ export default function NavbarFB() {
   }, [pathname, esPaginaContacto]);
 
   const handleClic = () => {
-    console.log(menuOpen);
-
+    const windowWidth = window.innerWidth;
+    const isMobileScreen = windowWidth <= 767; 
+    if (!isMobileScreen) {
+      return
+    }
     setMenuOpen(!menuOpen);
+    console.log(menuOpen);
+    
+    if(!menuOpen) {
+      setnavColor('bg-black')
+      setnavColorText('text-white')
+      setLogoURL("/images/logoEmco.png");
+      document.body.style.overflow = 'hidden'
+    }else{
+      document.body.style.overflow = 'auto'
+      if (esPaginaContacto) {
+        setLogoURL("/images/logoEmcoNegro.png");
+        setnavColor("bg-white");
+        setnavColorText("text-black");
+      } else {
+        setnavColorText("text-white");
+        setnavColor("bg-transparent");
+        setLogoURL("/images/logoEmco.png");
+      }
+    }
   };
 
   return (
-    <Navbar theme={NavbarCustomTheme} className={`${navColor} `}>
+    <Navbar theme={NavbarCustomTheme} className={`bg-black ${navColor} `}>
       <Navbar.Brand as={Link} href="/">
         <img
           src={logoURL}
