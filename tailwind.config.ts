@@ -18,7 +18,8 @@ const config: Config = {
       colors:{
         primary: '#f26f1f',        
         grey: 'rgba(36,36,36, .1)',
-        bgContraste: '#35240c'
+        bgContraste: '#35240c',
+        black: '#1a1a1a'
       }
     },
     container: {

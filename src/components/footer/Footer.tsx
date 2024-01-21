@@ -5,7 +5,7 @@ import { Footer } from 'flowbite-react';
 
 const FooterCustomTheme = {
     root: {
-      base: "w-screen rounded-lg bg-transparent flex items-center justify-end fixed bottom-0 z-50 text-black",
+      base: "w-screen rounded-lg bg-transparent flex items-center justify-end text-black",
     },
     groupLink: {
         "base": "flex flex-wrap text-black",
