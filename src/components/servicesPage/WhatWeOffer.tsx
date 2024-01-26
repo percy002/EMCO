@@ -39,7 +39,6 @@ export default function WhatWeOffer({
                         <div className="border-t border-gray-500 py-2 rounded-none"></div>
                         <div className="flex justify-between">
                           <h3 className="text-2xl">{el}</h3>
-                          <ArrowRightCircleIcon className={`w-10 h-10`} />
                         </div>
                       </div>
                     ))}
@@ -47,7 +46,6 @@ export default function WhatWeOffer({
               </section>
             </article>
           </div>
-          {/* <DetailSubService subservicio={subServiceDetail} /> */}
           <div
             className={`md:w-1/2 flex h-[40vh] md:h-auto relative rounded-3xl justify-start items-end bg-cover bg-center bg-no-repeat`}          
             style={{backgroundImage:`url(${imageURL})`}}
