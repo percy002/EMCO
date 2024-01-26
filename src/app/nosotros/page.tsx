@@ -117,7 +117,7 @@ export default function page() {
               <h5 className="text-2xl font-bold tracking-tight text-primary ">
                 Misión
               </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="font-normal text-gray-700 ">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
@@ -128,7 +128,7 @@ export default function page() {
               <h5 className="text-2xl font-bold tracking-tight text-primary ">
                 Visión
               </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="font-normal text-gray-700 ">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
@@ -148,9 +148,9 @@ export default function page() {
         </div>
       </section>
       <section className="container mt-14">
-        <div className="text-xl">
-          <p className="my-4"><span className="text-primary font-bold">Misión: </span>Somos líderes de Producción Segura de cobre, haciendo de cada día nuestro mejor día.</p>
-          <p className="my-4"><span className="text-primary font-bold">Visión: </span>Somos líderes de Producción Segura de cobre, haciendo de cada día nuestro mejor día.</p>
+        <div className="font-base text-gray-700">
+          <p className="my-4 text-xl"><span className="text-primary font-bold">Misión: </span>Somos líderes de Producción Segura de cobre, haciendo de cada día nuestro mejor día.</p>
+          <p className="my-4 text-xl"><span className="text-primary font-bold">Visión: </span>Somos líderes de Producción Segura de cobre, haciendo de cada día nuestro mejor día.</p>
         </div>
       </section>
       <section className="container mt-14">
