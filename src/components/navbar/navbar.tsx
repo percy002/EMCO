@@ -85,7 +85,6 @@ export default function NavbarFB() {
       return
     }
     setMenuOpen(!menuOpen);
-    console.log(menuOpen);
     
     if(!menuOpen) {
       setnavColor('bg-black')
@@ -154,7 +153,8 @@ export default function NavbarFB() {
           Contáctenos
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          href="/trabaja-con-nosotros"
+          active={pathname === "/trabaja-con-nosotros"}
           className={`${navColorText}`}
           onClick={handleClic}
         >

@@ -9,7 +9,7 @@ export default function page() {
     {
       title: "mecanizado 1",
       imageURL: "/images/servicios/Reparacion_fabricacion_piezas.jpg",
-      caracteristicas: ["calidad", "precisión"],
+      caracteristicas: ["calidad", "precisión", "responsabilidad"],
     },
     {
       title: "mecanizado 2",

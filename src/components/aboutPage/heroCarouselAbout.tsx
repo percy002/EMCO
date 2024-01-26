@@ -43,7 +43,7 @@ export default function HeroCarouselAbout({ carouselElements }: Props) {
                 className={`flex items-center justify-start h-full bg-cover bg-center` }
                 style={{backgroundImage:`url(${el.imageURL})`}}
               >
-                <div className="text-white max-w-[50%] ml-40">
+                <div className="text-white max-w-[50%] mx-auto md:ml-40">
                   <h2 className="text-5xl font-bold mb-2">{el.title}</h2>
                 </div>
               </div>
