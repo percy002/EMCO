@@ -38,7 +38,7 @@ export default function HeroCarousel({ carouselElements }: Props) {
       >
         {carouselElements &&
           carouselElements.map((el, index) => {
-            const imageBg = `bg-[url('/images/banner/bannerInicio1.jpg)]`;
+            const imageBg = `bg-[url('/images/banner/portada.jpg)]`;
             return (
               <div
                 key={index}
@@ -48,9 +48,10 @@ export default function HeroCarousel({ carouselElements }: Props) {
                 <div className="text-white text-center">
                   <h2 className="text-6xl font-bold mb-2">{el.title}</h2>
                   <p className="text-md mb-4 text-xl">{el.subtitle}</p>
-                  <button className="text-white text-xl px-4 py-2 mt-16 border border-white hover:bg-primary hover:border-transparent transition duration-500 ease-in-out">
-                    Descubre cómo
+                  {/* <button  className="text-white text-xl px-4 py-2 mt-16 border border-white hover:bg-primary hover:border-transparent transition duration-500 ease-in-out">
+                    NOSOTROS
                   </button>
+                   */}
                 </div>
               </div>
             );
