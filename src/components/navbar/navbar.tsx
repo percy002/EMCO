@@ -110,7 +110,7 @@ export default function NavbarFB() {
       <Navbar.Brand as={Link} href="/">
         <img
           src={logoURL}
-          className="mr-3 h-6 h-14 sm:h-16 lg:h-20"
+          className="mr-3 h-14 sm:h-16 lg:h-20"
           alt="EMCO mineral Logo"
         />
       </Navbar.Brand>
