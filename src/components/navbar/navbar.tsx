@@ -160,6 +160,14 @@ export default function NavbarFB() {
         >
           Trabaja con Nosotros
         </Navbar.Link>
+        <Navbar.Link
+          href="/certificados"
+          active={pathname === "/certificados"}
+          className={`${navColorText}`}
+          onClick={handleClic}
+        >
+          Certificados
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
