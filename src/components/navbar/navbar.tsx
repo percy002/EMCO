@@ -43,12 +43,12 @@ export default function NavbarFB() {
 
   const pathname = usePathname();
   const esPaginaContacto =
-    pathname === "/contactanos" || pathname === "/servicios";
+    pathname === "/contactanos/" || pathname === "/servicios/";
 
   const listenScrollEvent = () => {
     const scrolled = typeof window !== "undefined" && window.scrollY > 200;
 
-    // console.log(window.scrollY, "/", scrolled, '/',esPaginaContacto);
+    console.log(window.scrollY, "/", scrolled, '/',esPaginaContacto);
 
     setnavColor(scrolled ? "bg-white" : "bg-transparent");
     setnavColorText(scrolled ? "text-black" : "text-white");
